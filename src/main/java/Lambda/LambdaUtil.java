@@ -106,7 +106,7 @@ public class LambdaUtil {
      */
     public static LongBinaryOperator longSumOperation() {
         //todo
-        return null;
+        return (x,y) -> x + y;
     }
 
     /**
