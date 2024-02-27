@@ -128,7 +128,7 @@ public class LambdaUtil {
      */
     public static Supplier<IntUnaryOperator> nMultiplyFunctionSupplier(int n) {
         //todo
-        return null;
+        return () -> (int x) -> n * x;
     }
 
     /**
