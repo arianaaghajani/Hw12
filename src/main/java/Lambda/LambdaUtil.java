@@ -116,7 +116,7 @@ public class LambdaUtil {
      */
     public static ToIntFunction<String> stringToIntConverter() {
         //todo
-        return null;
+        return Integer ::parseInt;
     }
 
     /**
