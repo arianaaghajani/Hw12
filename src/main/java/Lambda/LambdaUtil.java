@@ -96,7 +96,7 @@ public class LambdaUtil {
      */
     public static IntUnaryOperator intSquareOperation() {
         //todo
-        return null;
+        return x -> (int) Math.pow(x,2);
     }
 
     /**
