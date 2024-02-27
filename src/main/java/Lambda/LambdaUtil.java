@@ -46,8 +46,9 @@ public class LambdaUtil {
      * @return function that converts adds dollar sign
      */
     public static Function<BigDecimal, String> toDollarStringFunction() {
+        Function<BigDecimal, String> toDollarStringFunction = bigDecimal -> "$" + bigDecimal.toString();
         //todo
-        return null;
+        return toDollarStringFunction;
     }
 
     /**
