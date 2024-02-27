@@ -84,8 +84,9 @@ public class LambdaUtil {
      * @return int operation
      */
     public static IntUnaryOperator boundedRandomIntSupplier() {
+        Random random =new Random();
         //todo
-        return null;
+        return random::nextInt;
     }
 
     /**
