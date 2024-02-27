@@ -2,6 +2,7 @@ package Lambda;
 
 import java.math.BigDecimal;
 import java.util.Map;
+import java.util.Random;
 import java.util.function.*;
 
 public class LambdaUtil {
@@ -34,7 +35,7 @@ public class LambdaUtil {
      * @return function that repeats Strings
      */
     public static BiFunction<String, Integer, String> stringMultiplier() {
-        BiFunction<String, Integer, String> getString = (a,b) -> a.repeat(b);
+        BiFunction<String, Integer, String> getString = (a, b) -> a.repeat(b);
         //todo
         return getString;
     }
@@ -71,8 +72,9 @@ public class LambdaUtil {
      * @return int supplier
      */
     public static IntSupplier randomIntSupplier() {
+        Random random = new Random();
         //todo
-        return null;
+        return random::nextInt;
     }
 
 
