@@ -138,7 +138,7 @@ public class LambdaUtil {
      */
     public static Supplier<Supplier<Supplier<String>>> trickyWellDoneSupplier() {
         //todo
-        return null;
+        return () ->() ->() ->"WELL DONE!";
     }
 
     /**
