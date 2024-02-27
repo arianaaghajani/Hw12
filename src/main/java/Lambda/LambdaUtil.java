@@ -34,8 +34,9 @@ public class LambdaUtil {
      * @return function that repeats Strings
      */
     public static BiFunction<String, Integer, String> stringMultiplier() {
+        BiFunction<String, Integer, String> getString = (a,b) -> a.repeat(b);
         //todo
-        return null;
+        return getString;
     }
 
     /**
