@@ -22,8 +22,9 @@ public class LambdaUtil {
      * @return a string predicate
      */
     public static Predicate<String> isEmptyPredicate() {
+        Predicate<String> isEmptyPredicate = a -> a.isEmpty();
         //todo
-        return null;
+        return isEmptyPredicate;
     }
 
     /**
