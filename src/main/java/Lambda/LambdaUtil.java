@@ -164,7 +164,14 @@ public class LambdaUtil {
      */
     public static BiFunction<IntUnaryOperator, IntPredicate, IntUnaryOperator> functionToConditionalFunction() {
         //todo :: extra points
-        return null;
+        return (intUnaryOperator, intPredicate) -> {
+                return input ->{
+                if(intPredicate.test(input)){
+                    return intUnaryOperator.applyAsInt(input);
+                }
+                return input;
+            };
+        };
     }
 
     /**
